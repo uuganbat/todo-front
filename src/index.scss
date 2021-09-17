@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+$white-color: #ffffff;
+$background-color: #fafafa;
+$primary-color: #541388;
+$secondary-color: #f4f1bb;
+$text-color: #202124;
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  color: $text-color;
+}
+
+body {
+  background-color: $background-color;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.task {
+  display: flex;
+  flex-direction: column;
+
+  .task-title {
+    color: $primary-color;
+    margin-bottom: 8px;
+  }
+
+  .task-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    width: 400px;
+    border: 1px solid #ccc;
+    background-color: $white-color;
+
+    .form-control {
+      font-size: 16px;
+      flex-grow: 3;
+      border: none;
+      padding: 0;
+      margin: 0;
+      transition: ease 2s;
+    }
+
+    .form-control::placeholder {
+      font-size: 16px;
+    }
+
+    .form-control:focus {
+      outline: none;
+    }
+
+    .input-button {
+      padding: 0;
+      border: none;
+      background: none;
+      cursor: pointer;
+      transition: opacity 600ms, visibility 600ms;
+
+      .material-icons {
+        color: $primary-color;
+        font-size: 20px;
+      }
+    }
+  }
+
+  .task-list {
+    list-style: none;
+    padding: 0;
+
+    li {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      justify-content: space-between;
+      border: 1px solid $secondary-color;
+      padding: 8px;
+      margin-top: 8px;
+
+      .material-icons {
+        color: $secondary-color;
+        font-size: 20px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+
+  .title {
+    font-size: 2rem;
+    color: $primary-color;
+    margin-bottom: 16px;
+  }
+
+  .login-form {
+    display: flex;
+    flex-direction: column;
+
+    input {
+      height: 48px;
+      padding: 8px 16px;
+      margin-bottom: 16px;
+      font-size: 16px;
+      border: 1px solid $white-color;
+      border-radius: 5px;
+      transition: linear 400ms;
+    }
+
+    input:focus {
+      outline: none;
+      border: 1px solid $primary-color;
+    }
+
+    input[type="submit"] {
+      background-color: $primary-color;
+      border: none;
+      color: #ffffff;
+    }
+
+    input[type="submit"]:hover {
+      color: $primary-color;
+      background-color: #ffffff;
+      border: 1px solid $primary-color;
+    }
+  }
+}
