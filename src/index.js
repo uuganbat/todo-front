@@ -5,7 +5,7 @@ import App from "./components/app";
 import reportWebVitals from "./reportWebVitals";
 
 const apiConfigs = {
-  host: "https://todo-front-ub.herokuapp.com",
+  host: "https://todo-back-ub.herokuapp.com",
   paths: {
     login: "/api/v1/login/",
     taskList: "/api/v1/task-list/",
