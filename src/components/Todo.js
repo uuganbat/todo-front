@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import Tasks from "./tasks";
-import TaskForm from "./taskForm";
-import Login from "./login";
+import Tasks from "./Tasks";
+import TaskForm from "./TaskForm";
+import Login from "./Login";
 
 async function getData(url, token) {
   const res = await fetch(url, {

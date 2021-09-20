@@ -1,11 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
-import App from "./components/app";
+import "./index.scss";
+import App from "./components/App";
 import reportWebVitals from "./reportWebVitals";
 
 const apiConfigs = {
-  host: "https://todo-back-ub.herokuapp.com",
+  // host: "https://todo-back-ub.herokuapp.com",
+  host: "http://localhost:8000",
   paths: {
     login: "/api/v1/login/",
     taskList: "/api/v1/task-list/",

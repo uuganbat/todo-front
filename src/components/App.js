@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Login from "./login";
-import Todo from "./todo";
+import Login from "./Login";
+import Todo from "./Todo";
 
 function App(props) {
   const [token, setToken] = useState();

@@ -19,9 +19,21 @@ export default function Login(props) {
     postData(props.apiConfigs.host + props.apiConfigs.paths.login, {
       username: username,
       password: password,
-    }).then((response) => {
-      props.setToken(response.token);
-    });
+    })
+      .then((response) => {
+        if (response.status === "success") {
+          props.setToken(response.token);
+        } else {
+          console.log(response);
+          alert(response.message);
+        }
+      })
+      .catch((error) => {
+        console.log(error);
+      })
+      .finally((error) => {
+        console.log(error);
+      });
   };
 
   return (
